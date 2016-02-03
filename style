@@ -1,0 +1,101 @@
+
+#container{
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+
+/* Box model: Content, margin, border, padding (goes top, right, bottom, left) 046380 E6E2AF 002F2F A7A37E */
+
+header#maintitle{
+    width: 75%;
+    padding: 4% 17% 2% 8%;
+    background-color: #046380;
+    
+}
+
+
+#sidebar{
+    background-color: #A7A37E;
+    width: 24%;
+    padding: 3%;
+    float: right;
+    
+}
+
+
+#content{
+    width: 45%;
+    padding: 3% 17% 3% 8%;
+    float: left;
+    background-color: #EFECCA;
+}
+
+footer{
+    clear: both;
+    width: 94%;
+    padding: 3%;
+    background-color: #A7A37E;
+
+}
+
+/* navigation styles */
+
+nav{
+    background-color: #00D4D4;
+    width: 75%;
+    padding: 1% 17% 1% 8%;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 8px 1.5% 8px 1.5%;
+    background-color: #046380;
+   margin: 0.5%;   
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:link{
+    color: #fff;
+
+}
+
+nav ul li a:visited{
+    color: #fff;
+
+}
+
+nav ul li a:hover{
+    color: #EFECCA;
+
+}
+
+nav ul li a:active{
+    color: #ff0000;
+
+}
+
+/* media screen sizes*/
+@media all and (max-width : 769px){
+    header{
+        text-align: center;
+
+    }
+    nav{
+        text-align: center;
+    }
+    #content{
+        width: 94%;
+        padding: 3%;
+    }
+    #sidebar{
+        display: none;
+    }
+    
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+}
